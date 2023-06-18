@@ -1,0 +1,119 @@
+body {
+    font-family: wotfardregular, Tahoma,Geneva,Segoe UI,Roboto,Helvetica;
+    background-image: linear-gradient(to right bottom, #354349, #504d58, #544a5e, #464258, #312231);  
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 1.5rem;
+}
+
+  @font-face {
+    font-family: 'wotfardregular';
+    src: url('assets/wotfard-regular-webfont.eot');
+    src: url('assets/wotfard-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/wotfard-regular-webfont.woff2') format('woff2'),
+         url('assets/wotfard-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+.uploadContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 30px;
+}
+
+.uploadInput {
+    padding: 0.5rem 0.5rem 0;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    font-size: 1.5rem;
+    line-height: 1.25;
+    color: #4a5568;
+  }
+
+  .tableContainer {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .tableHeader {
+    background-color: #edf2f7;
+  }
+  
+  .tableHeaderCell {
+    padding: 0.75rem;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+    color: #4a5568;
+    justify-content: center;
+  }
+  
+  .tableBody {
+    font-size: 0.875rem;
+  }
+  
+  .tableCell {
+    border-bottom: 2px solid #e2e8f0;
+  }
+
+  .table tr:nth-child(odd) td {
+    background-image: linear-gradient(to right bottom, #3d555f, #4a445c, #4a3d57, #464258);  
+  }
+  
+  .table tr:nth-child(even) td {
+    background-image: linear-gradient(to right bottom, #374449, #2d2a38, #3a3142, #32303f);  
+  }
+  
+  .input {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.25rem;
+    border: none;
+    background-color: transparent;
+  }
+  .input:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px #cbd5e0;
+  }
+  
+  .exportContainer {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 1.5rem;
+}
+  
+  .exportButton {
+    padding: 0.55rem 0.7rem;
+    background-color: #4a5568;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  .exportButton:hover {
+    background-color: #2d3748;
+  }
+  
+  .exportButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
